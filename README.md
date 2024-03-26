@@ -1,7 +1,7 @@
 # progettone website template
 ## istruzioni per aggiungere il progetto del sito internet (website folder) alla cartella del progettone
 
-1. Entra nella cartella del tuo progettone "my_progettone":
+1. Entra nella cartella del tuo progettone "my_progettone" e assicurati di non avere nella root una cartella che si chiama `website` in qeusto caso rinominala prima di proseguire:
   - `cd my_progettone`
 
 3. Aggiungi il repository "progettone-template" come remoto al tuo repository "my_progettone":
