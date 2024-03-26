@@ -1,5 +1,5 @@
 # progettone website template
-## istruzioni per aggiungere il progetto (website) alla cartella del progettone
+## istruzioni per aggiungere il progetto del sito internet (website folder) alla cartella del progettone
 
 1. Entra nella cartella del tuo progettone "my_progettone":
   - `cd my_progettone`
