@@ -1,5 +1,5 @@
 # Progettone website template
-## Istruzioni per aggiungere il progetto del sito internet (website folder) alla cartella del progettone
+## Istruzioni per aggiungere il boilerplate del sito internet (website folder) alla cartella del progettone
 
 1. Entra nella cartella del tuo progettone "my_progettone" e assicurati di non avere nella root una cartella che si chiama `website` in qeusto caso rinominala prima di proseguire:
   - `cd my_progettone`
