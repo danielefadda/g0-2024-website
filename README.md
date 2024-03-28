@@ -55,4 +55,4 @@ my_progettone/
 
 ├── *website*/
 
-└── README.md
+└── README.md (del tuo progetto locale, non di questo repository)
