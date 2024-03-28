@@ -16,9 +16,10 @@
   - `git remote set-url origin https://github.com/sobigdata-master/progettone-template.git`
 
 
-6. Rimuovi il file readme.md dal repository locale
-  - `git rm README.md`
-  - `git commit -m "removed readme.md"`
+6. Mantieni il file readme.md del repository locale
+  - `git checkout --ours README.md`
+  - `git add README.md`
+  - `git commit -m "readme conflict resolved"`
 
 
 7. Fai il merge dei file dal repository "progettone-template" al tuo repository "my_progettone":
