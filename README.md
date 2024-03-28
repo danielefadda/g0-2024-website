@@ -1,4 +1,4 @@
-# Aggiunta del Boilerplate del Sito Web al Progetto
+# Boilerplate del Sito Web Progettone
 
 ## Istruzioni per l'integrazione del boilerplate del sito web nella cartella del progetto
 
