@@ -1,41 +1,45 @@
-# Progettone website template
-## Istruzioni per aggiungere il boilerplate del sito internet (website folder) alla cartella del progettone
+# Aggiunta del Boilerplate del Sito Web al Progetto
 
-1. Entra nella cartella del tuo progettone "my_progettone" e assicurati di non avere nella root una cartella che si chiama `website` in qeusto caso rinominala prima di proseguire:
-  - `cd my_progettone`
+## Istruzioni per l'integrazione del boilerplate del sito web nella cartella del progetto
 
-3. Aggiungi il repository "progettone-template" come remoto al tuo repository "my_progettone":
-  - `git remote add progettone-template https://github.com/sobigdata-master/progettone-template`
+1. Accedi alla directory del tuo progetto chiamato "my_progettone" e assicurati che non esista già una cartella chiamata `website` nella radice del progetto. In caso contrario, rinominala prima di procedere:
+   - `cd my_progettone`
 
+2. Aggiungi il repository "progettone-template" come remoto al tuo repository "my_progettone":
+   - `git remote add progettone-template https://github.com/sobigdata-master/progettone-template`
 
-4. Recupera i file dal repository "progettone-template":
-  - `git fetch progettone-template`
+3. Recupera i file dal repository "progettone-template":
+   - `git fetch progettone-template`
 
+4. Imposta "progettone-template" come repository remoto:
+   - `git remote set-url origin https://github.com/sobigdata-master/progettone-template.git`
 
-5. Imposta progettone-template come repository remoto
-  - `git remote set-url origin https://github.com/sobigdata-master/progettone-template.git`
+5. Mantieni il file README.md del repository locale e ignora quello remoto (il file che stai leggendo):
+   - `git checkout --ours README.md`
+   - `git add README.md`
+   - `git commit -m "risolto conflitto nel README"`
 
+6. Effettua il merge dei file dal repository "progettone-template" nel tuo repository "my_progettone":
+   - `git merge progettone-template/main --allow-unrelated-histories`
 
-6. Mantieni il file readme.md del repository locale e ignora quello remoto (questo file che stai leggendo)
-  - `git checkout --ours README.md`
-  - `git add README.md`
-  - `git commit -m "readme conflict resolved"`
+7. Esegui il commit dei file aggiunti:
+   - `git commit -m "aggiunto boilerplate di base"`
 
+8. Rimuovi il collegamento con il repository "progettone-template" (non più necessario):
+   - `git remote remove progettone-template`
 
-7. Fai il merge dei file dal repository "progettone-template" e del tuo repository "my_progettone":
-  - `git merge progettone-template/main --allow-unrelated-histories`
+## La struttura della cartella dovrà essere simile a questa:
 
+my_progettone/
 
-8. Fai il commit dei file appena aggiunti
-  - `git commit -m "added jekyll boilerplate"`
+├── code/
 
-9. Rimuovi il collegamento con il repository *progettone-template* (non più necessario)
-  - `git remote remove progettone-template`
+├── deliverables/
 
-## La struttura della cartella dovrà avere una forma di questo tipo:
-- code
-- deliverables
-- figures
-- references
-- **website**
-readme.md
+├── figures/
+
+├── references/
+
+├── **website**/
+
+└── README.md
