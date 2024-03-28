@@ -40,6 +40,6 @@ my_progettone/
 
 ├── references/
 
-├── **website**/
+├── *website*/
 
 └── README.md
