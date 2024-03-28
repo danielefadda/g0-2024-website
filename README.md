@@ -8,7 +8,7 @@
   - `git remote add progettone-template https://github.com/sobigdata-master/progettone-template`
 
 
-4. Ora puoi recuperare i file dal repository "progettone-template" al tuo locale:
+4. Recupera i file dal repository "progettone-template":
   - `git fetch progettone-template`
 
 
@@ -16,20 +16,20 @@
   - `git remote set-url origin https://github.com/sobigdata-master/progettone-template.git`
 
 
-6. Mantieni il file readme.md del repository locale
+6. Mantieni il file readme.md del repository locale e ignora quello remoto (questo file che stai leggendo)
   - `git checkout --ours README.md`
   - `git add README.md`
   - `git commit -m "readme conflict resolved"`
 
 
-7. Fai il merge dei file dal repository "progettone-template" al tuo repository "my_progettone":
+7. Fai il merge dei file dal repository "progettone-template" e del tuo repository "my_progettone":
   - `git merge progettone-template/main --allow-unrelated-histories`
 
 
-8. Fai il commit dei aggiungendo la cartella con la struttura del sito jekyll
+8. Fai il commit dei file appena aggiunti
   - `git commit -m "added jekyll boilerplate"`
 
-9. Rimuovi il collegamento con il repository *progettone-template*
+9. Rimuovi il collegamento con il repository *progettone-template* (non più necessario)
   - `git remote remove progettone-template`
 
 ## La struttura della cartella dovrà avere una forma di questo tipo:
@@ -38,3 +38,4 @@
 - figures
 - references
 - **website**
+readme.md
