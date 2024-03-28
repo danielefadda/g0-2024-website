@@ -2,6 +2,8 @@
 
 ## Istruzioni per l'integrazione del boilerplate del sito web nella cartella del progetto
 
+Le istruzioni seguenti guidano l'integrazione di un boilerplate per un sito web Jekyll all'interno del vostro repository del progettone. Attraverso una serie di passaggi, aggiungeremo il boilerplate dalla repository remota al nostro progetto locale. Questo ci permetterà di avviare il nostro progetto con una struttura base già predefinita, risparmiando tempo e sforzi nella configurazione iniziale.
+
 ### The Git Way (consigliata)
 
 1. Accedi alla directory del tuo progetto chiamato "my_progettone" e assicurati che non esista già una cartella chiamata `website` nella radice del progetto. In caso contrario, rinominala prima di procedere:
