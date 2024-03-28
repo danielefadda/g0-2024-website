@@ -22,7 +22,7 @@
 
 
 7. Fai il merge dei file dal repository "progettone-template" al tuo repository "my_progettone":
-  - `git merge progettone-template/master --allow-unrelated-histories`
+  - `git merge progettone-template/main --allow-unrelated-histories`
 
 
 8. Fai il commit dei aggiungendo la cartella con la struttura del sito jekyll
