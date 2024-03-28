@@ -2,6 +2,8 @@
 
 ## Istruzioni per l'integrazione del boilerplate del sito web nella cartella del progetto
 
+### The Git Way (consigliata)
+
 1. Accedi alla directory del tuo progetto chiamato "my_progettone" e assicurati che non esista già una cartella chiamata `website` nella radice del progetto. In caso contrario, rinominala prima di procedere:
    - `cd my_progettone`
 
@@ -28,7 +30,18 @@
 8. Rimuovi il collegamento con il repository "progettone-template" (non più necessario):
    - `git remote remove progettone-template`
 
+
+### The Manual Way (sconsigliata)
+
+1. Accedi alla directory del tuo progetto chiamato "my_progettone" e assicurati che non esista già una cartella chiamata `website` nella radice del progetto. In caso contrario, rinominala prima di procedere:
+   - `cd my_progettone`
+
+2. Scarica da questo repository (progettone-template) la cartella `website` e aggiungila alla root del tuo progettone
+
+3. Fai commit e push dei file appena aggiunti
+
 ## La struttura della cartella dovrà essere simile a questa:
+
 
 my_progettone/
 
