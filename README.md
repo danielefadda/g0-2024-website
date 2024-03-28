@@ -25,7 +25,11 @@
   - `git merge progettone-template/master --allow-unrelated-histories`
 
 
-8. Aggiorna il tuo repository remoto con la cartella website appena scaricata
+8. Fai il commit dei aggiungendo la cartella con la struttura del sito jekyll
+  - `git commit -m "added jekyll boilerplate"`
+
+9. Rimuovi il collegamento con il repository *progettone-template*
+  - `git remote remove progettone-template`
 
 ## La struttura della cartella dovrà avere una forma di questo tipo:
 - code
