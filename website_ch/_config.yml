@@ -1,0 +1,102 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Atlante delle stragi nazifasciste in Italia
+subtitle: "Cronografia della guerra nazista in Italia"
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+github_repo:
+  - name: "Group 0 - Project repository"
+    url: "https://github.com/sobigdata-master/progettone-template"
+  - name: "Group 0 - Website repository"
+    url: "https://github.com/sobigdata-master/progettone-template"
+
+# Build settings
+theme: chulapa-jekyll
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+
+navbar:
+  style :  dual
+  brand:
+    title :  "Atlante delle stragi nazifasciste"
+    img: "./assets/images/Logo_masthead.png"
+    url: /
+  nav:
+    - title: single page
+      url: /single
+    - title: "Section 1" #Label
+      url: /single#section-1 #url
+    - title: about #Label
+      url: /about #url
+    - title: Two-level link #Label
+      child:
+        - title: Second level first item
+          url: /url2-1
+        - title: Second level second item
+          url: /url2-2
+    - title: markdown #Label
+      url: /markdown  #url
+
+chulapa-skin:
+  skin   : "graymor"
+  vars:
+   body-bg: "#fbf1ed"
+
+footer:
+  links:
+  - label: "Facebook"
+    icon: "fab fa-facebook"
+    url: https://www.facebook.com
+  - label: "Twitter"
+    icon: "fab fa-twitter"
+    url: https://www.twitter.com/sobigdata
+  copyright: "2024 SoBigData Master Projects. All rights reserved."
+
+

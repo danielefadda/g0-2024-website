@@ -1,5 +1,4 @@
 ---
-layout: post
 title:  "This is the second blogpost"
 date:   2024-03-28 10:53:28
 categories: generic blogpost

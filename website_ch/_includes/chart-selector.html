@@ -1,0 +1,55 @@
+<div class="container">
+    <div class="row pt-2">
+        <div class="col-md-8 offset-md-2 col-sm-12">
+            {% for chart in site.data.chart-selector %}
+            <button class="btn btn-primary chart-button" schema-url="{{ chart.url }}" data-description="{{chart.description}}">{{ chart.name }}
+            </button>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row pt-2">
+        <div class="col-md-8 offset-md-2 col-sm-12" >
+            <vegachart id="displayed-chart" schema-url="" style="width: 100%"></vegachart>
+            <div id="chart-container"></div>
+            <p id="chart-description"></p>
+        </div>
+    </div>
+</div>
+<hr>
+
+<script type="text/javascript">
+    console.log('ciao CHART');
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const chartButtons = document.querySelectorAll('.chart-button');
+        const chartDescription = document.getElementById('chart-description');
+
+        function displayChart(chartUrl, chartDescriptionText) {
+            const vegaChart = document.createElement('vegachart');
+            const chartContainer = document.getElementById('chart-container');
+            const chartDescription = document.getElementById('chart-description');
+            chartContainer.innerHTML = '';
+            vegaChart.setAttribute('schema-url', chartUrl);
+            vegaChart.style.width = '100%';
+
+            chartContainer.appendChild(vegaChart);
+            chartDescription.setAttribute('data-description', chartDescriptionText);
+            parseSchema(vegaChart).then(schema => vegaEmbed(vegaChart, schema, {"actions": false}));
+
+
+        }
+
+        chartButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                const chartUrl = this.getAttribute('schema-url');
+                const chartName = this.getAttribute('data-description');
+                chartDescription.textContent = chartName;
+                displayChart(chartUrl, chartName);
+            });
+        });
+        if (chartButtons.length > 0) {
+            chartButtons[0].click();
+        }
+    });
+</script>
+

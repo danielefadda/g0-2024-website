@@ -1,0 +1,1 @@
+<vegachart schema-url="assets/charts/stragi.json" style="width: 100%"></vegachart>
