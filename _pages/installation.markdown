@@ -264,33 +264,43 @@ bundle exec jekyll serve
 **aprite il browser all’indirizzo [http://127.0.0.1:4000](http://127.0.0.1:4000)**
 
 <br>
-# Per clonare questo tema in un proprio repository
+# Per clonare questo progetto in un proprio repository
 
-Andare al seguente link:
+**È necessario (e sufficiente) che questa operazione sia fatta da una persona sola del gruppo** 
+
+Andate al seguente link:
 
 ```bash
 https://github.com/new/import
 ```
 
-e inserire il link del repository da clonare:
+Inserire il link del repository da clonare:
 
 ```bash
 https://github.com/danielefadda/sbd-master-template.git
 ```
 
-Nella cartella appena clonata eseguire: 
+Invitare gli altri componenti del gruppo di lavoro
+<hr>
+
+A questo punto aprite **tutti** il vostro terminale, nella cartella dove avete i vostri progetti
+```bash
+git clone https://github.com/danielefadda/g0-2024-website.git
+```
+
+Nella cartella appena clonata eseguite: 
 
 ```bash
 bundle install
 ```
 
-Nel caso di errori relativi a **wdm** commentare la riga nel file **Gemfile** e rilanciare il comando **bundle install**
+Nel caso di errori relativi a **wdm** commentate la riga nel file **Gemfile** e rilanciate il comando **bundle install**
 
 ```bash
 # gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 ```
 
-lanciare il sito con il comando bundle
+lanciate il sito con il comando bundle
 ```bash
 bundle exec jekyll serve
 ```
