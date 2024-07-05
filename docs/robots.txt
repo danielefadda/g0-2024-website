@@ -1,1 +1,1 @@
-Sitemap: http://ut13.isti.cnr.it:81/~dfadda/progettone-template/sitemap.xml
+Sitemap: https://danielefadda.github.io/sbd-master-template/sitemap.xml
