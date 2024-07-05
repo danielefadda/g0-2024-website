@@ -141,6 +141,8 @@ exclude:
  - vendor/ruby/
  - .idea/
 
+include:
+  - .nojekyll
 livereload: true
 
 baseurl: "" # the subpath of your site, e.g. /blog
