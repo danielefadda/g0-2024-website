@@ -83,7 +83,7 @@ Ecco un esempio di un bottone di Bootstrap:
 
 # Personalizzazione del Layout
 La potenza di Bootstrap risiede anche nella sua capacità di essere altamente personalizzabile. 
-Utilizzando le variabili SASS di Bootstrap, è possibile adattare lo stile del framework alle esigenze specifiche del proprio progetto. 
+Utilizzando le **variabili SASS di Bootstrap**, è possibile adattare lo stile del framework alle esigenze specifiche del proprio progetto. 
 Questo permette di mantenere una coerenza stilistica senza dover riscrivere il CSS da zero.
 
 Ad esempio, è possibile personalizzare i colori predefiniti di Bootstrap modificando le variabili SASS corrispondenti:
@@ -93,7 +93,7 @@ $primary: #007bff;
 $secondary: #6c757d;
 ```
 In questo modo, è possibile creare un tema personalizzato per il proprio sito web senza compromettere la coerenza e la compatibilità con il framework.
-La personalizzazione delle variabili SASS in questo tema viene fatta attraverso il file di configurazione `_config.yml`
+La personalizzazione delle variabili SASS **in questo tema** viene fatta **attraverso il file di configurazione `_config.yml`**
 
 
 ---
@@ -101,4 +101,4 @@ La personalizzazione delle variabili SASS in questo tema viene fatta attraverso 
 Bootstrap è uno strumento essenziale per chiunque voglia creare siti web moderni e reattivi in modo rapido ed efficiente.
 La sua griglia reattiva e i suoi componenti predefiniti riducono il tempo necessario per lo sviluppo e permettono di concentrarsi sulla progettazione e sulla funzionalità del sito.
 
-Integrando Bootstrap con Jekyll, è possibile combinare la potenza di un framework front-end con la flessibilità di un generatore di siti statici.
+**Integrando Bootstrap con Jekyll, è possibile combinare la potenza di un framework front-end con la flessibilità di un generatore di siti statici.**

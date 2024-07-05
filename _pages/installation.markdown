@@ -278,10 +278,16 @@ e inserire il link del repository da clonare:
 https://github.com/sobigdata-master/progettone-template.git
 ```
 
-eseguire 
+Nella cartella appena clonata eseguire: 
 
 ```bash
 bundle install
+```
+
+Nel caso di errori relativi a **wdm** commentare la riga nel file **Gemfile** e rilanciare il comando **bundle install**
+
+```bash
+# gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 ```
 
 lanciare il sito con il comando bundle
