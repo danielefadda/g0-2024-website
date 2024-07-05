@@ -275,7 +275,7 @@ https://github.com/new/import
 e inserire il link del repository da clonare:
 
 ```bash
-https://github.com/sobigdata-master/progettone-template.git
+https://github.com/danielefadda/sbd-master-template.git
 ```
 
 Nella cartella appena clonata eseguire: 
