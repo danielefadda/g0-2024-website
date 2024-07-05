@@ -1,0 +1,3 @@
+url: "http://ut13.isti.cnr.it:81"
+baseurl: "/~dfadda/progettone-template/"
+destination: "_site_prod"
