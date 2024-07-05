@@ -262,3 +262,31 @@ bundle exec jekyll serve
 
 
 **aprite il browser all’indirizzo [http://127.0.0.1:4000](http://127.0.0.1:4000)**
+
+<br>
+# Per clonare questo tema in un proprio repository
+
+Andare al seguente link:
+
+```bash
+https://github.com/new/import
+```
+
+e inserire il link del repository da clonare:
+
+```bash
+https://github.com/sobigdata-master/progettone-template.git
+```
+
+eseguire 
+
+```bash
+bundle install
+```
+
+lanciare il sito con il comando bundle
+```bash
+bundle exec jekyll serve
+```
+
+**aprite il browser all’indirizzo [http://127.0.0.1:4000](http://127.0.0.1:4000)**
