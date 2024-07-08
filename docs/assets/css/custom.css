@@ -88,4 +88,8 @@
   background-color: rgba(243, 173, 149, 0.3);
 }
 
+iframe {
+  border: 0;
+}
+
 /*# sourceMappingURL=custom.css.map */

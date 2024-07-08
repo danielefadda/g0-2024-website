@@ -7,8 +7,8 @@
 		<description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
 		<language>en-US</language>
 		<copyright>(c) 2024, </copyright>	
-		<pubDate>Fri, 05 Jul 2024 23:18:54 +0200</pubDate>
-		<lastBuildDate>Fri, 05 Jul 2024 23:18:54 +0200</lastBuildDate>
+		<pubDate>Mon, 08 Jul 2024 14:23:05 +0200</pubDate>
+		<lastBuildDate>Mon, 08 Jul 2024 14:23:05 +0200</lastBuildDate>
 		<category>blog</category>
 		<ttl>60</ttl>
 		<atom:link href="https://danielefadda.github.io/sbd-master-template/rss.xml" rel="self" type="application/rss+xml" />
