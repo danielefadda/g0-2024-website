@@ -55,6 +55,8 @@ navbar:
       url: /jekyll-ssg
     - title: Charts
       url: /charts
+    - title: Folium
+      url: /folium-map
     - title: Write first #Label
       child:
         - title: markdown cheatsheet #Label
