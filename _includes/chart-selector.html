@@ -1,21 +1,22 @@
-<div class="container">
+{% assign dataset = site.data[include.dataset] %}
+
+<div class="{% if include.container == 'fluid' %}container-fluid{% else %}container{% endif %}">
     <div class="row pt-2">
-        <div class="col-md-8 offset-md-2 col-sm-12">
-            {% for chart in site.data.chart-selector %}
+        <div class={% if include.dimension == 'small' %}"col-md-8 offset-md-2 col-sm-12"{% else %}"col-md-12"{% endif %}>
+            {% for chart in {{dataset}} %}
             <button class="btn btn-primary chart-button" schema-url="{{site.baseurl}}/{{ chart.url }}" data-description="{{chart.description}}">{{ chart.name }}
             </button>
             {% endfor %}
         </div>
     </div>
     <div class="row pt-2">
-        <div class="col-md-8 offset-md-2 col-sm-12" >
+        <div class={% if include.dimension == 'small' %}"col-md-8 offset-md-2 col-sm-12"{% else %}"col-md-12"{% endif %}>
             <vegachart id="displayed-chart" schema-url="" style="width: 100%"></vegachart>
             <div id="chart-container"></div>
             <p id="chart-description"></p>
         </div>
     </div>
 </div>
-<hr>
 
 <script type="text/javascript">
     console.log('ciao CHART');

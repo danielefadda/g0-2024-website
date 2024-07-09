@@ -1,4 +1,4 @@
-<div class="container">
+<div class="{% if include.container == 'fluid' %}container-fluid{% else %}container{% endif %}">
     <div class="row pt-2">
         <div class="col-md-12 col-sm-12">
             <div class="card-container">
@@ -6,7 +6,7 @@
                 {% if include.width %}
                 <div class="card" style="width:{{ include.width }};">
                 {% else %}
-                <div class="card" style="width: 18rem;">
+                <div class="card">
                 {% endif %}
                         <div class="card-img"><img src="{{site.baseurl}}/{{ image[include.url]}}" class="card-img-top" alt="{{ image[include.name] }}">
                         </div>

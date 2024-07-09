@@ -54,6 +54,3 @@ Il template proposto è basato su Bootstrap e Jekyll e include una serie di funz
         </div>
     </div>
 </div>
-
-
-Questa è una prova

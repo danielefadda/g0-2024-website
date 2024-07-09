@@ -1,11 +1,17 @@
+{% if include.img %}
+<div>
+  <img src="{{site.baseurl}}/assets/images/{{include.img}}" class="img-fluid" data-toggle="modal" data-target="#{{include.id}}" style="cursor: pointer">
+</div>
+<br>
+{% endif %}
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#datasetDetails">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#{{ include.id }}">
   {{ include.title }}
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="datasetDetails" data-keyboard="false" tabindex="-1" aria-labelledby="datasetDetailsLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade" id="{{ include.id }}" data-keyboard="false" tabindex="-1" aria-labelledby="datasetDetailsLabel" aria-hidden="true">
+  <div class="modal-dialog {% if include.size%} modal-{{ include.size}} {% endif %} modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">{{ include.title }}</h5>
