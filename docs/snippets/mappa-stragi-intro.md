@@ -8,4 +8,12 @@ La dimensione dei cerchi è proporzionale al numero di vittime.
 {% include_relative snippets/mappa-stragi.md %}
 {% endcapture %}
 
-{% include modal-component-mappa.html title="Mappa delle stragi in Italia" content=mappa_stragi %}
+{% include modal-component.html title="Mappa delle stragi in Italia" size="xl" content=mappa_stragi id="mappa-stragi" img="mappa_stragi.png" %}
+
+<br>
+
+{% capture modal_mappa_tech %}
+{% include_relative snippets/tech/modal-mappa-tech.md %}
+{% endcapture %}
+{% include tech-content.html content=modal_mappa_tech %}
+<br>
