@@ -56,7 +56,6 @@ vega: true
 </div>
 {% include img-gallery-cards.html width='23%' datasource=site.data.img-selector url='url' name='name' description='description' %}
 
-{% include one-column.html %}
 
 [//]: # (Image selector)
 <div class="bg-color-full bg-color py-3 my-5" style="min-height:45vh">
@@ -67,6 +66,14 @@ vega: true
 [//]: # (Chart selector)
 {% include one-column.html dimension="small" title="Numero di morti per tipo di matrice" %}
 {% include chart-selector.html dimension="small" dataset="chart-selector" %}
+
+
+[//]: # (Gallery explanation)
+{% capture galleries_explanation %}
+{% include_relative snippets/galleries-explanation.md %}
+{% endcapture %}
+{% include one-column.html dimension="small" content=galleries_explanation %}
+<br>
 
 [//]: # (Map with modal)
 <hr>
