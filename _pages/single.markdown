@@ -12,19 +12,14 @@ vega: true
 [//]: # (variables section)
 
 
-
-
 {% capture stragi_all %}
-{% include_relative snippets/mappa-stragi-intro.md %}
+    {% include_relative snippets/mappa-stragi-intro.md %}
 {% endcapture %}
-
-
-
 
 
 [//]: # (Introduction section)
 {% capture introduction_content %}
-{% include_relative snippets/introduction.md %}
+    {% include_relative snippets/introduction.md %}
 {% endcapture %}
 
 {% include one-column.html dimension="small" content=introduction_content %}
@@ -41,7 +36,7 @@ vega: true
 [//]: # (Big numbers)
 <div class="bg-color bg-color-full py-3 my-5">
     {% include one-column.html dimension="small" title="I numeri delle stragi per matrice" %}
-    {% include big-numbers-cards.html data="morti-matrice" number="Morti" description="Matrice"%}
+    {% include big-numbers-cards.html data="morti-matrice" number="Morti" description="Matrice" %}
 </div>
 
 [//]: # (Chart Two columns)
@@ -50,16 +45,18 @@ vega: true
 {% endcapture %}
 
 {% capture section_1_content %}
-{% include_relative snippets/section-1.md %}
+    {% include_relative snippets/section-1.md %}
 {% endcapture %}
 
 {% include two-columns.html col-one=introduction_images col-two=section_1_content %}
 
 [//]: # (Cards Gallery)
 <div class="bg-color bg-color-full py-3 my-5" id="galleria">
-{% include one-column.html dimension="small" title="Gallerie di immagini e chart" %}
+    {% include one-column.html dimension="small" title="Gallerie di immagini e chart" %}
 </div>
-{% include img-gallery-cards.html width='23%' datasource=site.data.img-selector url ='url' name='name' description='description' %}
+{% include img-gallery-cards.html width='23%' datasource=site.data.img-selector url='url' name='name' description='description' %}
+
+{% include one-column.html %}
 
 [//]: # (Image selector)
 <div class="bg-color-full bg-color py-3 my-5" style="min-height:45vh">

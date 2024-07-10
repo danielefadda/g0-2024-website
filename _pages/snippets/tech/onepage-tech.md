@@ -1,6 +1,6 @@
-Benvento, 
+Benvenuto, 
 
-ti trovi all'interno di un div con classe tech. Tali div vengono utilizzati per spiegare aspetti tecnici della pagina `single.markdown`. Questa pagina è stata creata per visualizzare tutto il contenuto all'interno di una single-page.
+Questo box è un `div` con classe tech. Tali div vengono utilizzati per spiegare aspetti tecnici. Questa pagina è stata creata per visualizzare tutto il contenuto all'interno di una single-page.
 
 La pagina ha una struttura molto semplificata (navigation, header e footer) lasciando la possibilità all'utente di personalizzarla utilizzando i vari snippet di codice.
 

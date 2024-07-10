@@ -131,3 +131,8 @@
 iframe {
   border: 0;
 }
+
+// wrench
+.tech-wrench .fa-wrench:hover {
+  transform: scale(1, 1) !important;
+}
