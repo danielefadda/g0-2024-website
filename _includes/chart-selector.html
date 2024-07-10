@@ -2,7 +2,7 @@
 
 <div class="{% if include.container == 'fluid' %}container-fluid{% else %}container{% endif %}">
     <div class="row pt-2">
-        <div class={% if include.dimension == 'small' %}"col-md-8 offset-md-2 col-sm-12"{% else %}"col-md-12"{% endif %}>
+        <div class={% if include.dimension == "small" %}"col-md-8 offset-md-2 col-sm-12"{% else %}"col-md-12"{% endif %}>
             {% for chart in {{dataset}} %}
             <button class="btn btn-primary chart-button" schema-url="{{site.baseurl}}/{{ chart.url }}" data-description="{{chart.description}}">{{ chart.name }}
             </button>
