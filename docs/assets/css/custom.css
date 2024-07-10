@@ -114,4 +114,8 @@ iframe {
   border: 0;
 }
 
+.tech-wrench .fa-wrench:hover {
+  transform: scale(1, 1) !important;
+}
+
 /*# sourceMappingURL=custom.css.map */
